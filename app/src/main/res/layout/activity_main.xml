@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="list"
+    />
+
+    <android.bloomberg.com.flyingvideodemo.FlyingVideoPlayer
+        android:id="@+id/flyingVideoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <VideoView
+            android:id="@+id/viewHeader"
+            android:layout_width="480dp"
+            android:layout_height="270dp"
+            />
+
+        <TextView
+            android:id="@+id/viewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:tag="desc"
+            android:textSize="22sp"
+            android:text="Video description goes here"
+            android:textColor="@android:color/white"
+            android:background="#202020"/>
+
+    </android.bloomberg.com.flyingvideodemo.FlyingVideoPlayer>
+
+</FrameLayout>
